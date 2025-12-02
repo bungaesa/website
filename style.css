@@ -21,13 +21,14 @@ p {
 #main-header {
   background-image: url(https://tse2.mm.bing.net/th/id/OIP.dVabD7c3HO6zHmaOUHHEOQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3);
   background-size: cover;
-  padding: 1px;
-  margin: 40px auto;
+  padding: 0px;
+  margin: 0px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+  margin-top: 0px;
 }
 .judul-header {
     font-size: 45px;
@@ -39,11 +40,11 @@ p {
 
 .highlight {
   background: #dededf;
-  padding: 50px;
+  padding: 20px;
   border-left: 4px solid #023570;
   border-radius: 10px;
   color: #fdfdfd;
-  width: 1200px;
+  width: 800px;
   margin: 50px auto;
   max-width: 100%;
 }
@@ -61,13 +62,14 @@ p {
 }
 
 .table {
-  width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
   background: #f9fbfd;
   border-radius: 6px;
   overflow-x: auto;
-  display: block;
+  display: table;
+  
 }
 
 .table th {
@@ -77,6 +79,7 @@ p {
   border-left: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   border-radius: 6px;
+  white-space: nowrap;
 }
 
 .table td {
@@ -86,6 +89,7 @@ p {
   border-radius: 6px;
   text-align: center;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 .card-container {
@@ -213,10 +217,9 @@ input {
     width: 100%;
   }
 
-  .table {
-    display: block;
+ .table-wrapper {
     overflow-x: auto;
-  }
+    width: 100%;
 }
 
 
